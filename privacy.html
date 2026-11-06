@@ -18,41 +18,55 @@
     <h1>Privacy policy</h1>
 
     <section>
-      <h2>Who is responsible?</h2>
-      <p>Responsible developer: Marvin de Vries<br>Fichtenweg 18/1<br>73095 Albershausen, Germany<br>
-      Contact: <a href="mailto:marvin.dev.inquiries@outlook.com">marvin.dev.inquiries@outlook.com</a></p>
-    </section>
-
-
-
-
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email enquiries are handled through Microsoft Outlook. Messages and contact details are used to respond to the enquiry, not for marketing.</p>
+      <h2>Responsible developer</h2>
+      <p>Marvin de Vries<br>Fichtenweg 18/1<br>73095 Albershausen, Germany<br><a href="mailto:marvin.dev.inquiries@outlook.com">marvin.dev.inquiries@outlook.com</a></p>
     </section>
 
     <section>
-      <h2>Planned private beta</h2>
-      <p>The planned free beta would use connected activity data to track completed runs, strength sessions and recorded sets where available. Sleep, resting heart rate and HRV trends would help adjust upcoming sessions. Participants could edit workouts and choose to send them to Garmin Connect for use on a compatible watch. These connections require participant consent.</p>
-      
+      <h2>Scope and development status</h2>
+      <p>This notice concerns the Training application. The current version is an owner-only prototype. Access for invited users and workout publishing through Garmin’s Training API are planned and are not yet enabled.</p>
     </section>
 
     <section>
-      <h2>Application hosting and access</h2>
-      <p>The current training application uses OpenAI sign-in and runs on Cloudflare, with account-linked records stored in Cloudflare D1. Garmin supplies connected activity and recovery data. Connection credentials and optional calendar links are encrypted on the server.</p>
-      <p>Training suggestions are calculated by application rules. The current application does not call a generative AI API for these suggestions. It also exposes an optional assistant connection: using that connection can make training data available to OpenAI. This access must be explained separately before participants enable it.</p>
-      <p>Disconnecting Garmin stops future API imports but keeps imported history. The application’s “Delete all data” control removes the account’s application records and saved connections from active storage. It does not delete the participant’s Garmin or OpenAI account.</p>
-      
+      <h2>Data and purposes</h2>
+      <p>The application links records to a signed-in account. It processes profile details and training preferences; connected Garmin activities, including runs, strength sessions and recorded sets, repetitions, weights and durations where available; and recovery information such as sleep, resting heart rate, HRV and activity load. Optional measurements, check-ins and published calendar sessions support planning and progress tracking.</p>
+      <p>These records are used to display training history, calculate exercise progression and suggest workouts around running and recovery. Connection credentials and tokens allow authorized imports; optional private calendar links allow schedule imports. Credentials and calendar links are encrypted on the server.</p>
+      <p>The planned workout-publishing feature will send only workouts selected by the user to Garmin Connect for a compatible device. It will require authorization and consent to transfer those workouts to Garmin. See <a href="https://www.garmin.com/privacy/connect">Garmin Connect’s privacy notice</a>.</p>
     </section>
 
     <section>
-      <h2>Your rights</h2>
-      <p>Depending on applicable law, you can request access to, correction or deletion of personal data, restriction of processing, and object to certain processing. You can also contact a data protection authority with a complaint. Use the contact address above for requests about your application data.</p>
+      <h2>Service providers and sharing</h2>
+      <p>Garmin supplies authorized activity and recovery data and will receive workouts when publishing is enabled. OpenAI provides the Sites platform and account sign-in. Cloudflare provides application execution and storage, including Cloudflare D1 for account-linked records. These services support delivery of the application and processing of its data.</p>
+      <p>Microsoft Outlook handles email enquiries and data-rights requests. Microsoft receives the message and any information included in it. Do not send credentials or unnecessary health records by email.</p>
+      <p>Garmin data is not sold. It is not shared for advertising or data brokerage. Necessary sharing is limited to the services described here, user-authorized Garmin transfers, and disclosures required by law. Other participants do not have access to a user’s private records.</p>
     </section>
+
     <section>
-      <h2>Privacy review status</h2>
-      <p>Retention periods, backup handling and international-transfer details still require confirmation. A working health-data consent process is also required before beta invitations. This is not yet a completed beta compliance notice.</p>
+      <h2>AI transparency</h2>
+      <p>Workout suggestions are calculated by application rules. The current application code does not send workout or health records to a generative AI model for analysis. Its optional assistant connector can trigger a server-side Garmin refresh and return the last successful import timestamp; it does not expose activity or health records through its tools.</p>
+      <p>Garmin data and information derived from it must not be used to train, evaluate or improve AI models. Developing the software with an AI coding assistant does not require submitting real user records or API secrets to that assistant.</p>
+      <p>Any future AI analysis of Garmin records will remain disabled until permitted by the applicable Garmin terms and covered by a specific explanation of the provider, data and purpose. It would require separate explicit opt-in consent and an accessible withdrawal control. It is not part of the current service.</p>
+    </section>
+
+    <section>
+      <h2>Consent and connection controls</h2>
+      <p>In the current prototype, Settings allows the owner to disconnect the Personal API connection and remove the separate calendar link. Disconnecting stops API imports; removing the calendar link stops calendar imports. Disconnecting alone retains imported history. Delete all data in My Account removes records and saved connections from active application storage.</p>
+      <p>The planned multi-user integration will use Garmin’s authorization screen rather than require participants to supply Personal API keys. Before collecting participant health data, the app must implement explicit consent for the specified purposes under Articles 6(1)(a) and 9(2)(a) GDPR. This participant consent process is not yet implemented.</p>
+      <p>You can withdraw consent by contacting the developer at the address above. Where applicable, you can also revoke the app’s permissions in Garmin Connect. Withdrawal does not affect the lawfulness of processing before withdrawal. Withdrawing access to necessary data prevents the related import or recommendation features from operating.</p>
+    </section>
+
+    <section>
+      <h2>Access, corrections, export and deletion</h2>
+      <p>You can view records in the application and edit profile information and supported records there. Corrections to imported records are kept within the application and do not change Garmin Connect.</p>
+      <p>To request access to all application-held personal data, correct records that cannot be edited in the interface, or request a machine-readable export, email the developer. There is currently no self-service export button. You can delete active application data through My Account or request deletion by email. Deleting application data does not delete your Garmin or OpenAI account.</p>
+      <p>Applicable rights also include restriction of processing, portability and objection. You may complain to a data protection authority, including the authority in your place of residence or the Baden-Württemberg data protection authority.</p>
+    </section>
+
+    <section>
+      <h2>Retention and remaining arrangements</h2>
+      <p>Current prototype records remain in active storage until deleted; there is no automatic inactivity-deletion schedule. Removing a connection does not automatically erase past records. Provider backups and operational logs may have separate retention periods; their applicable periods and deletion handling still require confirmation.</p>
+      <p>Provider processing may involve locations outside the European Economic Area. The applicable processing agreements, locations and international-transfer safeguards must be confirmed before invited-user access begins. This notice does not claim that hosting is restricted to the EU.</p>
+      <p>Invited-user access will remain closed until these arrangements and the health-data consent process are completed. This notice describes the present prototype and planned features; it is not confirmation that the beta is ready to launch.</p>
       <p>Last updated: 6 November 2026</p>
     </section>
   </main>
