@@ -38,7 +38,7 @@ li { margin-bottom: 6px; }
 :root { --accent: #a74a18; }
 body { background: #faf9f6; color: #252621; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 .site-header { background: #fff; }
-.site-label::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 9px; border-radius: 50%; background: var(--accent); }
+
 nav a { padding: 5px 0; }
 a:hover { color: var(--accent); }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 2px; }
