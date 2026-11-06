@@ -20,7 +20,7 @@
 
     <section>
       <h2>Who is responsible?</h2>
-      <p>Website operator: Marvin de Vries<br>Fichtenweg 18/1<br>73095 Albershauen, Germany<br>
+      <p>Website operator: Marvin de Vries<br>Fichtenweg 18/1<br>73095 Albershausen, Germany<br>
       Contact: <a href="mailto:marvin.dev.inquiries@outlook.com">marvin.dev.inquiries@outlook.com</a></p>
     </section>
 
@@ -44,6 +44,14 @@
       <h2>Planned private beta</h2>
       <p>The planned free beta would invite a small group of Garmin users. With consent, the Activity API would supply completed runs, strength sessions and recorded sets where available. Health API data would include sleep, resting heart rate and HRV trends to adjust suggested sessions. Participants could edit workouts and send them to Garmin Connect through the Training API for a compatible watch.</p>
       <p>This website does not process those records. Before participants connect, a beta privacy notice must identify the actual hosting and other processors, any international transfers, the legal bases for activity and health data, retention periods, and how to withdraw consent or delete data.</p>
+    </section>
+
+    <section>
+      <h2>Beta hosting and access</h2>
+      <p>The current training application uses OpenAI sign-in and runs on Cloudflare, with account-linked records stored in Cloudflare D1. Garmin supplies connected activity and recovery data. Connection credentials and optional calendar links are encrypted on the server.</p>
+      <p>Training suggestions are calculated by application rules. The inspected application does not call a generative AI API for these suggestions. It also exposes an optional assistant connection: using that connection can make training data available to OpenAI. This access must be explained separately before participants enable it.</p>
+      <p>Disconnecting Garmin stops future API imports but keeps imported history. The application’s “Delete all data” control removes the account’s application records and saved connections from active storage. It does not delete the participant’s Garmin or OpenAI account.</p>
+      <p>Beta access is not yet open. Before invitations, the notice must specify provider retention and backup handling, transfer safeguards, and the explicit consent process for health data.</p>
     </section>
 
     <section>
